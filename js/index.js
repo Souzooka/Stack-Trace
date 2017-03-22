@@ -18,13 +18,12 @@ window.onload = function() {
       output.innerHTML += "<li>" + llist.get(i-1).value + "</li>";
     }
 
-    llist = linkedListGenerator();
-
     output.innerHTML = "<ol type=\"1\">" + output.innerHTML + "</ol>";
-
-
   });
 
-
+  document.querySelector("#reset").addEventListener("click", function() {
+    llist = linkedListGenerator();
+    document.querySelector("#output").innerHTML = "";
+  });
 
 };
