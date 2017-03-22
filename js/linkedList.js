@@ -16,6 +16,10 @@ function linkedListGenerator(){
     return _tail;
   }
 
+  function getLength() {
+    return _length;
+  }
+
   function add(value) {
     if (_head === null) {
       _head = {

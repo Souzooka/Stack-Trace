@@ -7,7 +7,10 @@ window.onload = function() {
     }
   });
 
-  document.querySelector("#dump")
+  document.querySelector("#dump").addEventListener("click", function() {
+
+
+  });
 
 
 
