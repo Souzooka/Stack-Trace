@@ -109,9 +109,3 @@ function linkedListGenerator(){
     insert
   };
 }
-
-var list = linkedListGenerator();
-list.add("1");
-list.remove(0);
-console.log(list.getHead());
-console.log(list.getTail());
