@@ -102,6 +102,7 @@ function linkedListGenerator(){
   return {
     getHead,
     getTail,
+    getLength,
     add,
     remove,
     get,
