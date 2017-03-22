@@ -12,7 +12,7 @@ window.onload = function() {
     let length = llist.getLength();
 
     for (var i = length; i > 0; i--) {
-      console.log(llist.get(i-1).value);
+      document.querySelector("#output").innerHTML += llist.get(i-1).value + "<br>";
     }
   });
 
