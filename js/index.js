@@ -14,11 +14,15 @@ window.onload = function() {
 
     output.innerHTML = "";
 
-    for (var i = length; i > 0; i--) {
+    for (let i = length; i > 0; i--) {
       output.innerHTML += "<li>" + llist.get(i-1).value + "</li>";
     }
 
+    llist = linkedListGenerator();
+
     output.innerHTML = "<ol type=\"1\">" + output.innerHTML + "</ol>";
+
+
   });
 
 
