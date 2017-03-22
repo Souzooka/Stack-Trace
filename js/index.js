@@ -10,10 +10,15 @@ window.onload = function() {
 
   document.querySelector("#dump").addEventListener("click", function() {
     let length = llist.getLength();
+    let output = document.querySelector("#output");
+
+    output.innerHTML = "";
 
     for (var i = length; i > 0; i--) {
-      document.querySelector("#output").innerHTML += llist.get(i-1).value + "<br>";
+      output.innerHTML += "<li>" + llist.get(i-1).value + "</li>";
     }
+
+    output.innerHTML = "<ol type=\"1\">" + output.innerHTML + "</ol>";
   });
 
 
